@@ -12,7 +12,7 @@ import { Button } from 'primeng/button';
 export class Header {
   email = 'admiservis@gmail.com';
   phone = '3125312276';
-  logoSrc = 'assets/logo.png';
+  logoSrc = '../assets/img/logo-solo.png';
 
   mailto() { window.location.href = `mailto:${this.email}`; }
   call()   { window.location.href = `tel:${this.phone}`;   }
