@@ -1,35 +1,42 @@
 <header class="surface-0">
   <div class="px-2 py-1">
     <div class="flex align-items-center justify-content-between gap-2 w-full">
-
       <a class="flex align-items-center gap-2 text-color no-underline" routerLink="/">
-        <img src="../../assets/img/logo-solo.png" alt="ADMISERVIS" class="w-3rem h-3rem md:w-3rem md:h-3rem" />
+        <img src="img/logo-solo.png" alt="ADMISERVIS" class="w-3rem h-3rem md:w-3rem md:h-3rem" />
         <div class="line-height-1">
           <div class="text-sm md:text-base font-bold letter-spacing-1">ADMISERVIS</div>
-          <div class="mt-1  font-bold text-color-text">LTDA</div>
+          <div class="mt-1 font-bold text-color-text">LTDA</div>
         </div>
       </a>
 
       <nav class="hidden md:flex align-items-center gap-3">
-        <a routerLink="/"
-           routerLinkActive="font-bold text-primary"
-           [routerLinkActiveOptions]="{ exact:true }"
-           class="no-underline text-color text-sm md:text-base px-2 py-1 border-round transition-duration-150 hover:surface-100">
+        <a
+          routerLink="/"
+          routerLinkActive="font-bold text-primary"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="no-underline text-color text-sm md:text-base px-2 py-1 border-round transition-duration-150 hover:surface-100"
+        >
           Inicio
         </a>
-        <a routerLink="/nosotros"
-           routerLinkActive="font-bold text-primary"
-           class="no-underline text-color text-sm md:text-base px-2 py-1 border-round transition-duration-150 hover:surface-100">
+        <a
+          routerLink="/nosotros"
+          routerLinkActive="font-bold text-primary"
+          class="no-underline text-color text-sm md:text-base px-2 py-1 border-round transition-duration-150 hover:surface-100"
+        >
           Nosotros
         </a>
-        <a routerLink="/servicios"
-           routerLinkActive="font-bold text-primary"
-           class="no-underline text-color text-sm md:text-base px-2 py-1 border-round transition-duration-150 hover:surface-100">
+        <a
+          routerLink="/servicios"
+          routerLinkActive="font-bold text-primary"
+          class="no-underline text-color text-sm md:text-base px-2 py-1 border-round transition-duration-150 hover:surface-100"
+        >
           Servicios
         </a>
-        <a routerLink="/contacto"
-           routerLinkActive="font-bold text-primary"
-           class="no-underline text-color text-sm md:text-base px-2 py-1 border-round transition-duration-150 hover:surface-100">
+        <a
+          routerLink="/contacto"
+          routerLinkActive="font-bold text-primary"
+          class="no-underline text-color text-sm md:text-base px-2 py-1 border-round transition-duration-150 hover:surface-100"
+        >
           Contáctanos
         </a>
       </nav>
@@ -39,10 +46,10 @@
           pButton
           type="button"
           size="small"
-      
           severity="contrast"
           class="px-2 py-1 text-left"
-          (click)="mailto()">
+          (click)="mailto()"
+        >
           <span class="block text-sm text-color-text font-bold">Envíanos un email</span>
           <span class="block text-xs text-600">{{ email }}</span>
         </button>
@@ -51,10 +58,10 @@
           pButton
           type="button"
           size="small"
-          
           severity="primary"
           class="px-2 py-1 text-left"
-          (click)="call()">
+          (click)="call()"
+        >
           <span class="block text-sm text-color-text font-bold">Solicita limpieza inmediata</span>
           <span class="block text-xs text-600">{{ phone }}</span>
         </button>
