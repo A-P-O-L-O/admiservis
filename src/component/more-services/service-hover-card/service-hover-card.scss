@@ -1,0 +1,83 @@
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 20rem;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Imagen base */
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .image {
+  transform: scale(1.05);
+}
+
+/* Título siempre visible en la parte superior */
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+/* Capa que aparece en hover */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Mostrar descripción en hover */
+.service-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Descripción animada */
+.description {
+  color: #fff;
+  opacity: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  max-width: 90%;
+}
+
+.service-card:hover .description {
+  opacity: 1;
+  transform: translateY(0);
+}

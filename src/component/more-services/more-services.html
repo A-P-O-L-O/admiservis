@@ -1,1 +1,16 @@
-<p>more-services works!</p>
+<section class="grid justify-content-center p-4 poppins-regular">
+  <div class="col-12 text-center mb-4">
+    <h2 class="text-2xl font-semibold">Más Servicios</h2>
+  </div>
+
+  @for (item of services; track $index) {
+  <div class="col-12 sm:col-6 lg:col-3 flex justify-content-center">
+    <app-service-hover-card
+      [title]="item.title"
+      [description]="item.description"
+      [image]="item.image"
+      class="w-full md:w-10"
+    />
+  </div>
+  }
+</section>

@@ -1,0 +1,18 @@
+.service-card {
+  min-height: 280px;
+  max-width: 350px;
+  background-color: var(--surface-card);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Asegura que todos los textos se alineen y tengan el mismo alto visual */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

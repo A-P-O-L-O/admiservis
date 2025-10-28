@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  background-color: var(--surface-ground);
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+section.poppins-regular .col-12,
+section.poppins-regular .col-6,
+section.poppins-regular .col-3 {
+  display: flex;
+}
+
+section.poppins-regular app-card-service,
+section.poppins-regular > div > div {
+  flex: 1;
+  min-height: 20rem; /* 👈 ajusta según tu diseño */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}

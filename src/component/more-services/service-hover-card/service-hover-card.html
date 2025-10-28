@@ -1,0 +1,12 @@
+<div class="service-card">
+  <!-- Imagen -->
+  <img [src]="image" [alt]="title" class="image" />
+
+  <!-- Título siempre visible arriba -->
+  <h3 class="title">{{ title }}</h3>
+
+  <!-- Descripción visible solo al hacer hover -->
+  <div class="overlay">
+    <p class="description">{{ description }}</p>
+  </div>
+</div>
