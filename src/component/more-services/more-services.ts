@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SERVICES } from '../our-services/constants';
+import { MORESERVICES } from '../our-services/constants';
 import { CommonModule } from '@angular/common';
 import { ServiceHoverCard } from './service-hover-card/service-hover-card';
 
@@ -11,6 +11,6 @@ import { ServiceHoverCard } from './service-hover-card/service-hover-card';
 })
 export class MoreServices {
 
-  services = SERVICES
+  services = MORESERVICES
 
 }

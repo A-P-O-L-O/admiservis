@@ -11,6 +11,6 @@ export class ServiceHoverCard {
 
   @Input() title = '';
   @Input() description = '';
-  @Input() image = '';
+  @Input() icon = '';
 
 }
