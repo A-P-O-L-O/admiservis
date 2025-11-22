@@ -1,0 +1,38 @@
+/* src/app/component/home/about-and-clients.scss */
+
+/* círculo con borde suave (opcional) */
+.circle-wrap {
+  border-radius: 9999px;
+  padding: .25rem;
+  border: 1px solid var(--p-surface-200);
+}
+
+/* barrita azul de acento arriba a la derecha */
+.accent-bar {
+  width: 14rem;
+  height: .5rem;
+  background: var(--p-primary-color);
+}
+
+/* tarjeta de logo */
+.logo-card {
+  transition: transform .18s ease, box-shadow .18s ease;
+  min-height: 7rem;
+}
+.logo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--p-shadow-3);
+}
+
+/* controla tamaño del logo dentro de la tarjeta */
+.logo-img {
+  max-width: 140px;
+  max-height: 48px;
+  object-fit: contain;
+  filter: grayscale(100%); /* opcional: estilo “marcas” */
+  opacity: .9;
+}
+.logo-card:hover .logo-img {
+  filter: grayscale(0);
+  opacity: 1;
+}

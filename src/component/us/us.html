@@ -1,12 +1,118 @@
-<div class="w-full  p-2 flex align-items-center justify-content-center gap-6">
-  <div class="w-16rem h-16rem bg-primary flex align-items-center justify-content-center border-round">
-    <img src="assets/servicios-generales.jpg" alt="imagen de servicios generales" class="w-full h-full" style="object-fit: cover;">
+
+<section class="w-full text-center py-3  bg-blue-600">
+  <h2 class="m-0 text-white font-bold text-xl md:text-2xl">
+    Porqué Elegirnos
+  </h2>
+</section>
+
+<section class="w-full mx-auto px-3 md:px-4 py-5 md:py-6 my-4 md:my-6" >
+
+  <div class="flex flex-column md:flex-row align-items-start justify-content-between gap-8 md:gap-6">
+    
+ 
+    <div class="flex justify-content-center">
+      <div class="border-2 border-round-xl surface-0" style="border-color: var(--p-blue-600); padding:.6rem;">
+        <div class="border-2 border-round-lg overflow-hidden" style="border-color: var(--p-blue-600);">
+          <img
+            src="/aseo-mujer.png"
+            alt="Servicios de limpieza en oficina"
+            class="block w-20rem h-15rem md:w-24rem md:h-18rem"
+            style="object-fit: cover;" />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flex-1">
+      <h2 class="m-0 line-height-3 text-900 text-2xl md:text-4xl font-bold">
+        <span class="text-blue-600">12 años </span> <span class="font-normal">de trayectoria</span>
+      </h2>
+
+      <div class="mt-2 text-900 text-base md:text-lg line-height-3">
+        <p class="m-0 mt-2">
+          En <strong>Admiservis LTDA</strong> contamos con <strong>más de 12 años de experiencia</strong>
+          ofreciendo <strong>servicios de limpieza y mantenimiento</strong> para
+          <strong> hogares</strong>, <strong>empresas</strong> y <strong>conjuntos residenciales</strong>.
+        </p>
+
+        <p class="m-0 mt-2">Nos caracteriza nuestro compromiso con:</p>
+        <ul class="mt-2 ml-3">
+          <li><strong>Responsabilidad</strong> en cada proyecto.</li>
+          <li><strong>Puntualidad</strong> en la atención y ejecución.</li>
+          <li><strong>Confianza</strong> y acompañamiento continuo al cliente.</li>
+        </ul>
+
+        <p class="m-0 mt-2">
+          Hemos construido <strong>relaciones duraderas</strong> gracias a nuestro
+          compromiso con la <strong>calidad</strong> y el <strong>bienestar</strong> de los espacios que cuidamos día a día.
+        </p>
+      </div>
+    </div>
   </div>
 
-  <div>
-    <h2 class="m-0 text-2xl  font-semibold">12 años de trayectoria de Admiservis</h2>
+ 
+  <div class="grid text-center mt-4 md:mt-5">
+    <div class="col-12 md:col-4">
+      <div class="text-blue-600 font-bold text-4xl md:text-5xl">+ 12</div>
+      <div class="mt-1 text-900 text-base md:text-lg font-semibold">Años de Experiencia</div>
+    </div>
 
+    <div class="col-12 md:col-4">
+      <div class="text-blue-600 font-bold text-4xl md:text-5xl">+ 18</div>
+      <div class="mt-1 text-900 text-base md:text-lg font-semibold">Clientes Satisfechos</div>
+    </div>
 
-
+    <div class="col-12 md:col-4">
+      <div class="text-blue-600 font-bold text-4xl md:text-5xl">+ 100</div>
+      <div class="mt-1 text-900 text-base md:text-lg font-semibold">Proyectos Completados</div>
+    </div>
   </div>
-</div>
+</section>
+<!-- src/app/component/home/about-and-clients.html -->
+
+
+<section class="mx-auto w-full max-w-7xl px-3 md:px-5 py-5">
+  <div class="grid align-items-center">
+   
+    <div class="col-12 md:col-5 flex justify-content-center md:justify-content-start">
+      <div class="circle-wrap">
+        <p-skeleton shape="circle" width="18rem" height="18rem"></p-skeleton>
+      </div>
+    </div>
+
+    
+    <div class="col-12 md:col-7">
+      <div class="flex justify-content-end">
+        <div class="accent-bar border-round"></div>
+      </div>
+
+      <div class="mt-4">
+        <p-skeleton width="65%" height="1.3rem" class="mb-3"></p-skeleton>
+        <p-skeleton width="90%" height="0.8rem" class="mb-2"></p-skeleton>
+        <p-skeleton width="55%" height="0.8rem" class="mb-2"></p-skeleton>
+        <p-skeleton width="80%" height="0.8rem"></p-skeleton>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="surface-50" style="height:24px"></div>
+
+
+<section class="surface-50">
+  <div class="mx-auto w-full max-w-7xl px-3 md:px-5 py-6">
+    <h2 class="text-center text-900 text-xl md:text-2xl font-semibold mb-5">Nuestros clientes</h2>
+
+    <div class="grid justify-content-center">
+      <div class="col-12 sm:col-6 md:col-4 lg:col-2"
+           *ngFor="let l of logos">
+        <div class="logo-card surface-card border-round-2xl shadow-1 p-4 flex align-items-center justify-content-center">
+          
+          <img [src]="l.src" [alt]="l.alt" class="logo-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

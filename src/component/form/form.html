@@ -1,1 +1,54 @@
-<p>form works!</p>
+<section class="hero surface-0">
+  <div class="mx-auto w-full px-3 md:px-4" style="max-width:1180px">
+    <div class="grid align-items-center">
+
+      <!-- IZQUIERDA -->
+      <div class="col-12 lg:col-7">
+        <h1 class="hero__title m-0">
+          Gama Completa de
+          <span class="text-primary">Servicios</span><br />
+          Generales
+        </h1>
+
+        <div class="flex align-items-center gap-2 mt-3">
+          <span class="pi pi-play-circle text-primary text-xl"></span>
+          <span class="text-700">Ver video</span>
+        </div>
+
+        <!-- Franja de años -->
+        <div class="hero__years mt-4">
+          <div class="hero__years-number">+12</div>
+          <div class="hero__years-text">Años de experiencia</div>
+        </div>
+      </div>
+
+      <!-- DERECHA -->
+      <div class="col-12 lg:col-5">
+        <div class="hero__right flex align-items-end justify-content-end gap-2">
+          <!-- Imagen persona -->
+          <img [src]="personSrc" alt="Asesora Admiservis" class="hero__img" />
+
+          <!-- Card del formulario -->
+          <p-card class="hero__card">
+            <ng-template pTemplate="header">
+              <div class="hero__card-header">
+                <div class="hero__arrow"></div>
+                <h2 class="m-0">Organiza tu espacio<br />con limpieza</h2>
+              </div>
+            </ng-template>
+
+            <form [formGroup]="form" (ngSubmit)="submit()" class="flex flex-column gap-2">
+              <input pInputText formControlName="nombre" placeholder="Nombre Completo" />
+              <input pInputText formControlName="email" placeholder="Correo Electrónico" />
+              <input pInputText formControlName="celular" placeholder="Número de Celular" />
+              <input pInputText formControlName="tipo" placeholder="Tipo Limpieza" />
+
+              <button pButton type="submit" class="w-full" label="Recibir asesoría gratuita"></button>
+            </form>
+          </p-card>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
